@@ -30,7 +30,7 @@ export default function Template({children}) {
     return (
         <div>
             <div
-                className={'h-[130vw] w-[130vw] bg-primary fixed'}
+                className={'h-[100vh] w-[130vw] bg-primary fixed'}
                 style={{
                     left: '50%',
                     top: '100%',
