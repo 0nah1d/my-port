@@ -1,49 +1,49 @@
-'use client';
-import CommonPageLayout from "@/layout/CommonPageLayout";
-import {useRef} from "react";
-import {gsap} from "gsap";
-import {useGSAP} from "@gsap/react";
-import MagneticGSAP from "@/components/GSAP/MagneticGSAP";
+'use client'
+import CommonPageLayout from '@/layout/CommonPageLayout'
+import { useRef } from 'react'
+import { gsap } from 'gsap'
+import { useGSAP } from '@gsap/react'
+import MagneticGSAP from '@/components/GSAP/MagneticGSAP'
 
 export default function About() {
-    const aboutLeftRef = useRef();
-    const aboutRightRef = useRef();
+    const aboutLeftRef = useRef()
+    const aboutRightRef = useRef()
 
     // Using the useGSAP hook for animations
     useGSAP(() => {
         // Register GSAP plugin
-        gsap.registerPlugin();
+        gsap.registerPlugin()
 
         // Create the animation timeline
-        const aboutTimeline = gsap.timeline();
+        const aboutTimeline = gsap.timeline()
 
         // Animating the left section
         aboutTimeline.fromTo(
             aboutLeftRef.current,
-            {x: -2000, opacity: 0},
+            { x: -2000, opacity: 0 },
             {
                 x: 0,
                 opacity: 1,
                 duration: 0.5,
-                ease: "power1.out",
+                ease: 'power1.out',
             },
-            "a"
-        );
+            'a'
+        )
 
         // Animating the right section
         aboutTimeline.fromTo(
             aboutRightRef.current,
-            {scale: 2, rotate: 90, opacity: 0},
+            { scale: 2, rotate: 90, opacity: 0 },
             {
                 scale: 1,
                 rotate: 0,
                 opacity: 1,
                 duration: 0.5,
-                ease: "power1.out",
+                ease: 'power1.out',
             },
-            "a"
-        );
-    });
+            'a'
+        )
+    })
 
     return (
         <div>
@@ -57,10 +57,14 @@ export default function About() {
                         <div className="flex flex-col w-full gap-8">
                             {/* Heading and Description */}
                             <div className="flex flex-col gap-4 items-center lg:items-start">
-                                <h1 className="text-5xl font-bold font-exo2_bold">About Us</h1>
+                                <h1 className="text-5xl font-bold font-exo2_bold">
+                                    About Us
+                                </h1>
                                 <p className="text-base text-gray-500 leading-relaxed text-center lg:text-start">
-                                    Our achievement story is a testament to teamwork and perseverance. Together,
-                                    we&#39;ve overcome challenges, celebrated victories, and created a narrative of
+                                    Our achievement story is a testament to
+                                    teamwork and perseverance. Together,
+                                    we&#39;ve overcome challenges, celebrated
+                                    victories, and created a narrative of
                                     progress and success.
                                 </p>
                             </div>
@@ -91,9 +95,7 @@ export default function About() {
                         </div>
 
                         {/* Read More Button */}
-                        <button
-                            className="flex items-center justify-center w-full px-3.5 py-2 text-sm font-medium leading-6 text-white bg-primary rounded-lg sm:w-fit group"
-                        >
+                        <button className="flex items-center justify-center w-full px-3.5 py-2 text-sm font-medium leading-6 text-white bg-primary rounded-lg sm:w-fit group">
                             <span className="px-1.5">Read More</span>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -124,14 +126,12 @@ export default function About() {
                 </div>
             </CommonPageLayout>
         </div>
-    );
+    )
 }
 
-function StatCard({title, description}) {
+function StatCard({ title, description }) {
     return (
-        <div
-            className="flex flex-col w-full gap-2.5 p-3.5 border rounded-xl border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out"
-        >
+        <div className="flex flex-col w-full gap-2.5 p-3.5 border rounded-xl border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out">
             <h4 className="text-2xl font-bold text-gray-900 font-manrope leading-9">
                 {title}
             </h4>
@@ -139,5 +139,5 @@ function StatCard({title, description}) {
                 {description}
             </p>
         </div>
-    );
+    )
 }

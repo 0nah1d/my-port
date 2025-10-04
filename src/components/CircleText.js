@@ -1,14 +1,14 @@
-import {useEffect, useRef} from 'react';
-import {gsap} from 'gsap';
-import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 export default function CircleText() {
-    const imageRef = useRef(null);
+    const imageRef = useRef(null)
 
     useEffect(() => {
-        const section3 = document.querySelector('#section3');
+        const section3 = document.querySelector('#section3')
 
         gsap.to(imageRef.current, {
             rotation: 360,
@@ -21,12 +21,12 @@ export default function CircleText() {
                 // markers: true,
                 pin: true,
             },
-        });
+        })
 
         return () => {
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        };
-    }, []);
+            ScrollTrigger.getAll().forEach((trigger) => trigger.kill())
+        }
+    }, [])
 
     return (
         <div className="flex items-center justify-center">
@@ -37,5 +37,5 @@ export default function CircleText() {
                 ref={imageRef}
             />
         </div>
-    );
+    )
 }

@@ -1,9 +1,5 @@
-import CommonPageLayout from "@/layout/CommonPageLayout";
+import CommonPageLayout from '@/layout/CommonPageLayout'
 
 export default function Project() {
-    return (
-        <CommonPageLayout>
-            This is Project Page
-        </CommonPageLayout>
-    )
+    return <CommonPageLayout>This is Project Page</CommonPageLayout>
 }

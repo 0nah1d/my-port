@@ -1,12 +1,12 @@
 'use client'
-import React, {useState, createContext, useRef} from "react"
-import gsap from "gsap"
+import React, { useState, createContext, useRef } from 'react'
+import gsap from 'gsap'
 
 const TransitionContext = createContext({})
 
-const TransitionProvider = ({children}) => {
+const TransitionProvider = ({ children }) => {
     const [timeline, setTimeline] = useState(() =>
-        gsap.timeline({paused: true})
+        gsap.timeline({ paused: true })
     )
 
     return (
@@ -21,4 +21,4 @@ const TransitionProvider = ({children}) => {
     )
 }
 
-export {TransitionContext, TransitionProvider}
+export { TransitionContext, TransitionProvider }

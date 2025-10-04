@@ -1,31 +1,36 @@
 'use client'
-import React, {useState, useContext, useRef} from "react";
-import gsap from "gsap";
-import {useGSAP} from "@gsap/react";
-import {TransitionContext} from "@/context/TransitionProvider";
-import Footer from "@/components/Footer";
+import React, { useState, useContext, useRef } from 'react'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { TransitionContext } from '@/context/TransitionProvider'
+import Footer from '@/components/Footer'
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(useGSAP)
 
-export default function Template({children}) {
-    const [isRendered, setIsRendered] = useState(false);
-    const {timeline, setTimeline} = useContext(TransitionContext);
-    const overlayRef = useRef();
+export default function Template({ children }) {
+    const [isRendered, setIsRendered] = useState(false)
+    const { timeline, setTimeline } = useContext(TransitionContext)
+    const overlayRef = useRef()
 
-    useGSAP(() => {
-
-        gsap.fromTo(overlayRef.current, {
-            duration: 1.5,
-            ease: 'power2.inOut',
-        }, {
-            top: '-320%',
-            duration: 2,
-            ease: 'power2.inOut',
-        })
-            .eventCallback('onComplete', () => {
-                setIsRendered(true);
-            });
-    }, {scope: overlayRef});
+    useGSAP(
+        () => {
+            gsap.fromTo(
+                overlayRef.current,
+                {
+                    duration: 1.5,
+                    ease: 'power2.inOut',
+                },
+                {
+                    top: '-320%',
+                    duration: 2,
+                    ease: 'power2.inOut',
+                }
+            ).eventCallback('onComplete', () => {
+                setIsRendered(true)
+            })
+        },
+        { scope: overlayRef }
+    )
 
     return (
         <div>
@@ -47,9 +52,9 @@ export default function Template({children}) {
             {isRendered && (
                 <div>
                     {children}
-                    <Footer/>
+                    <Footer />
                 </div>
             )}
         </div>
-    );
+    )
 }
