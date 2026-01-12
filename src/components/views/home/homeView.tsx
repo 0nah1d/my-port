@@ -1,5 +1,5 @@
 'use client'
-import MagneticGSAP from '@/components/GSAP/magnetic'
+import Magnetic from '@/components/GSAP/magnetic'
 import CircleText from '@/components/views/home/elements/circleText'
 import TitleScroll from '@/components/views/home/elements/titleScroll'
 import { useGSAP } from '@gsap/react'
@@ -106,7 +106,7 @@ const HomeView = () => {
                     </div>
                     <div className="right mt-8 lg:mt-0 flex justify-center lg:justify-end">
                         <div className="relative w-full md:w-[50vw] lg:w-[40vw]">
-                            <MagneticGSAP>
+                            <Magnetic>
                                 <Image
                                     src="images/men.svg"
                                     alt="Image"
@@ -115,7 +115,7 @@ const HomeView = () => {
                                     priority
                                     className="w-[80vw] lg:w-[50vw] lg:absolute lg:left-0 lg:top-0"
                                 />
-                            </MagneticGSAP>
+                            </Magnetic>
                         </div>
                     </div>
                 </section>
