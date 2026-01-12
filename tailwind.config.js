@@ -11,11 +11,11 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                fira_regular: ['var(--font-firacode-regular)'],
-                fira_bold: ['var(--font-firacode-bold)'],
-                exo2_regular: ['var(--font-exo2-regular)'],
-                exo2_bold: ['var(--font-exo2-bold)'],
-                anton_regular: ['var(--font-anton-regular)'],
+                fira_regular: ['var(--font-firacode)'],
+                fira_bold: ['var(--font-firacode)'],
+                exo2_regular: ['var(--font-exo2)'],
+                exo2_bold: ['var(--font-exo2)'],
+                anton_regular: ['var(--font-anton)'],
             },
             backgroundColor: {
                 primary: '#178573',
