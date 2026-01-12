@@ -70,10 +70,10 @@ const ContactView = () => {
         <>
             <div className="grid lg:grid-cols-2 gap-14">
                 <div ref={contactLeftRef}>
-                    <h1 className="text-5xl font-bold font-exo2_bold">
+                    <h1 className="text-5xl font-bold font-exo2">
                         Get in Touch
                     </h1>
-                    <p className="text-base mt-4 leading-relaxed font-exo2_regular">
+                    <p className="text-base mt-4 leading-relaxed font-exo2">
                         Have some big idea or brand to develop and need help?
                         Then reach out! We&apos;d love to hear about your
                         project and provide help.
@@ -85,7 +85,7 @@ const ContactView = () => {
                                 icon={faEnvelope}
                                 className="h-4 w-4"
                             />
-                            <h6 className="text-base ml-4 font-exo2_regular">
+                            <h6 className="text-base ml-4 font-exo2">
                                 nahidthedeveloper@gmail.com
                             </h6>
                         </li>
@@ -94,7 +94,7 @@ const ContactView = () => {
                                 icon={faPhone}
                                 className="h-4 w-4"
                             />
-                            <h6 className="text-base ml-4 font-exo2_regular">
+                            <h6 className="text-base ml-4 font-exo2">
                                 +88 01750423751
                             </h6>
                         </li>
@@ -103,7 +103,7 @@ const ContactView = () => {
                                 icon={faLocationDot}
                                 className="h-4 w-4"
                             />
-                            <h6 className="text-base ml-4 font-exo2_regular">
+                            <h6 className="text-base ml-4 font-exo2">
                                 Rangpur 5680, Bangladesh.
                             </h6>
                         </li>
@@ -138,7 +138,7 @@ const ContactView = () => {
                 </div>
 
                 <div
-                    className="p-6 rounded-lg font-fira_regular shadow-xl"
+                    className="p-6 rounded-lg font-fira_code shadow-xl"
                     ref={contactRightRef}
                 >
                     <form className="mt-8 space-y-4">

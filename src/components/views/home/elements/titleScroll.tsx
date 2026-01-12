@@ -75,14 +75,14 @@ const TitleScroll = () => {
         >
             <div className="flex items-center text-white">
                 <div className="firstTitle flex items-center">
-                    <h1 className="name text-[10vw] font-exo2_bold text-nowrap">
+                    <h1 className="name text-[10vw] font-exo2 text-nowrap">
                         Nahid Hasan
                     </h1>
                     <FontAwesomeIcon
                         icon={faLocationArrow}
                         className="titleIcon h-[8vw] w-[8vw] mt-[2vw] mx-[3vw]"
                     />
-                    <h1 className="name text-[10vw] font-exo2_bold text-nowrap">
+                    <h1 className="name text-[10vw] font-exo2 text-nowrap">
                         Nahid Hasan
                     </h1>
                     <FontAwesomeIcon
@@ -92,14 +92,14 @@ const TitleScroll = () => {
                 </div>
 
                 <div className="secondTitle flex items-center">
-                    <h1 className="name text-[10vw] font-exo2_bold text-nowrap">
+                    <h1 className="name text-[10vw] font-exo2 text-nowrap">
                         Nahid Hasan
                     </h1>
                     <FontAwesomeIcon
                         icon={faLocationArrow}
                         className="titleIcon h-[8vw] w-[8vw] mt-[2vw] mx-[3vw]"
                     />
-                    <h1 className="name text-[10vw] font-exo2_bold text-nowrap">
+                    <h1 className="name text-[10vw] font-exo2 text-nowrap">
                         Nahid Hasan
                     </h1>
                     <FontAwesomeIcon

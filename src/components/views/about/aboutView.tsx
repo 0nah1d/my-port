@@ -42,14 +42,14 @@ const AboutView = () => {
 
     return (
         <>
-            <div className="grid w-full gap-10 lg:grid-cols-2 font-exo2_regular">
+            <div className="grid w-full gap-10 lg:grid-cols-2 font-exo2">
                 <div
                     className="flex flex-col items-center gap-10 lg:items-start "
                     ref={aboutLeftRef}
                 >
                     <div className="flex flex-col w-full gap-8">
                         <div className="flex flex-col gap-4 items-center lg:items-start">
-                            <h1 className="text-5xl font-bold font-exo2_bold">
+                            <h1 className="text-5xl font-bold font-exo2">
                                 About Us
                             </h1>
                             <p className="text-base text-gray-500 leading-relaxed text-center lg:text-start">

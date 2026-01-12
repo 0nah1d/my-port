@@ -1,6 +1,6 @@
 'use client'
-import CircleText from '@/components/views/home/elements/circleText'
 import MagneticGSAP from '@/components/GSAP/magnetic'
+import CircleText from '@/components/views/home/elements/circleText'
 import TitleScroll from '@/components/views/home/elements/titleScroll'
 import { useGSAP } from '@gsap/react'
 import { gsap } from 'gsap'
@@ -84,14 +84,14 @@ const HomeView = () => {
                     className="max-w-screen-xl w-full lg:min-h-screen pt-[3vw] px-4 mx-auto flex flex-col lg:flex-row justify-between"
                 >
                     <div className="left text-center lg:text-left">
-                        <h1 className="text-[8vw] md:text-[6vw] lg:text-[5vw] font-exo2_bold mt-16 lg:mt-32 leading-[1]">
+                        <h1 className="text-[8vw] md:text-[6vw] lg:text-[5vw] font-exo2 mt-16 lg:mt-32 leading-[1]">
                             Hi, my <br />{' '}
                             <span className="whitespace-nowrap">
                                 name is Nahid.
                             </span>
                         </h1>
 
-                        <h6 className="text-[3vw] md:text-[1.5vw] lg:text-[1vw] font-fira_regular mt-4">
+                        <h6 className="text-[3vw] md:text-[1.5vw] lg:text-[1vw] font-fira_code mt-4">
                             A passionate full stack web developer from
                             Bangladesh.
                         </h6>

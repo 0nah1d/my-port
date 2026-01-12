@@ -134,7 +134,7 @@ const Navbar = () => {
             <div className="mx-auto w-full max-w-screen-xl px-4 py-6 flex justify-between items-center">
                 <Link href="/">
                     <h2
-                        className="uppercase text-4xl font-anton_regular text-[#178573]"
+                        className="uppercase text-4xl font-anton text-[#178573]"
                         ref={appNameRef}
                     >
                         {appName}
@@ -161,9 +161,9 @@ const Navbar = () => {
                         <h2
                             className={`link uppercase text-xl ${
                                 pathname === link.path
-                                    ? 'font-exo2_bold'
-                                    : 'font-exo2_regular'
-                            } text-black hover:font-exo2_bold`}
+                                    ? 'font-exo2 font-bold'
+                                    : 'font-exo2'
+                            } text-black hover:font-exo2 font-bold`}
                         >
                             {link.name}
                         </h2>

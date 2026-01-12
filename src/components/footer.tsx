@@ -12,11 +12,11 @@ import Link from 'next/link'
 
 const Footer = () => {
     return (
-        <footer className="font-exo2_regular mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mt-24">
+        <footer className="font-exo2 mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mt-24">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
                     <Link href="/">
-                        <h2 className="uppercase text-4xl font-anton_regular text-[#178573]">
+                        <h2 className="uppercase text-4xl font-anton text-[#178573]">
                             {appName}
                         </h2>
                     </Link>
