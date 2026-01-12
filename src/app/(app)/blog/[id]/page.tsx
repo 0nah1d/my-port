@@ -1,5 +1,13 @@
-const BlogChild = () => {
-    return <div>I am from blog child.</div>
+import BlogDetailsView from '@/components/views/blog/blogDetailsView'
+import { appDescription, appName } from '@/config/app'
+
+export const metadata = {
+    title: `${appName} | Blog Details`,
+    description: appDescription,
 }
 
-export default BlogChild
+const BlogDetailsPage = () => {
+    return <BlogDetailsView />
+}
+
+export default BlogDetailsPage

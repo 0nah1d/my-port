@@ -1,5 +1,6 @@
 'use client'
 
+import { appName } from '@/config/app'
 import {
     faDiscord,
     faFacebookF,
@@ -16,7 +17,7 @@ const Footer = () => {
                 <div className="mb-6 md:mb-0">
                     <Link href="/">
                         <h2 className="uppercase text-4xl font-anton_regular text-[#178573]">
-                            Nahid Port.
+                            {appName}
                         </h2>
                     </Link>
                 </div>

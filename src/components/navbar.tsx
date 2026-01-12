@@ -1,5 +1,6 @@
 'use client'
 
+import { appName } from '@/config/app'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { gsap } from 'gsap'
@@ -23,7 +24,7 @@ const links: NavLink[] = [
 const Navbar = () => {
     const pathname = usePathname()
 
-    const appName = useRef<HTMLHeadingElement | null>(null)
+    const appNameRef = useRef<HTMLHeadingElement | null>(null)
     const openButton = useRef<HTMLDivElement | null>(null)
     const navbarTimeline = useRef<gsap.core.Timeline | null>(null)
     const sideMenu = useRef<HTMLDivElement | null>(null)
@@ -31,9 +32,9 @@ const Navbar = () => {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            if (!appName.current || !openButton.current) return
+            if (!appNameRef.current || !openButton.current) return
 
-            const h2 = appName.current
+            const h2 = appNameRef.current
             const textArray = h2.textContent?.split('') || []
             const halfText = Math.floor(textArray.length / 2)
             let animatedText = ''
@@ -83,7 +84,7 @@ const Navbar = () => {
                     },
                     '-=1'
                 )
-        }, [appName, openButton])
+        }, [appNameRef, openButton])
 
         return () => ctx.revert()
     }, [])
@@ -134,9 +135,9 @@ const Navbar = () => {
                 <Link href="/">
                     <h2
                         className="uppercase text-4xl font-anton_regular text-[#178573]"
-                        ref={appName}
+                        ref={appNameRef}
                     >
-                        Nahid Port.
+                        {appName}
                     </h2>
                 </Link>
 

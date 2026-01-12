@@ -1,12 +1,13 @@
 import HomeView from '@/components/views/home/homeView'
+import { appDescription, appName } from '@/config/app'
 
 export const metadata = {
-    title: 'Nahid Port | Home',
-    description: 'Nahid Portfolio Home Page',
+    title: `${appName} | Home`,
+    description: appDescription,
 }
 
-const Home = () => {
+const HomePage = () => {
     return <HomeView />
 }
 
-export default Home
+export default HomePage
